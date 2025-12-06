@@ -14,8 +14,6 @@
 // let sum = twoSum(s, t);
 // console.log(sum);
 
-
-
 // 2. Add Two Numbers===================
 
 // function addTwoNumbers(lone,ltwo){
@@ -43,8 +41,52 @@
 // };
 // console.log(isPalindrome(12));
 
- 
+// 4. Valid Palindrome===========
+// function isAnagram(s, t) {
+//   let blooean = false;
+//   let a = s.toLowerCase().split("").sort().join("");
+//   let b = t.toLowerCase().split("").sort().join("");
+//   if (a == b) {
+//     blooean = true;
+//   }
+//   return blooean;
+// }
+// console.log(isAnagram("sww", "sww"));
 
 
+// 5.Valid Palindrome
+// let isPalindrome = function(s) {
+// let et = "";
+// let boolean=false
+// let a = s.toLowerCase().split("");
+// for (let i = 0; i < a.length; i++) {
+//   if ((a[i] >= "a" && a[i] <= "z")|| (a[i]>="0"&&a[i]<="9")) {
+//     et += a[i];
+//   }
+// }
+// let rev = et.toString().split("").reverse().join("");
+// if(et==rev){
+// boolean=true
+// }
+// return boolean
+// };
+// let a="0P"
+// console.log(isPalindrome(a));
 
+// 6.Valid Parentheses===========
+
+// function isValid (s) {
+//   let arr = []
+//   for( char of s){
+//     if(char=="{"||char=="["||char=="("){
+//       arr.push(char)
+//     }else{
+//       let pop=arr.pop()
+//       if(char==="}"&& pop=="{") return false
+//       if(char==="]"&& pop=="[") return false
+//       if(char===")"&& pop==")") return false
+//     }
+//   }  
+//   return arr.length==0
+// };
 
